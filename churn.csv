@@ -1,0 +1,101 @@
+customer_id,tenure,monthly_charges,total_charges,contract_type,payment_method,churn
+C0001,26,30.65,797.84,Month-to-month,Electronic check,Yes
+C0002,43,53.7,2308.93,One year,Credit card,Yes
+C0003,5,119.56,597.03,Month-to-month,Mailed check,No
+C0004,8,103.72,824.39,One year,Bank transfer,Yes
+C0005,22,116.38,2566.76,Month-to-month,Credit card,Yes
+C0006,35,67.88,2372.15,Month-to-month,Bank transfer,No
+C0007,5,89.9,455.44,Two year,Electronic check,No
+C0008,14,51.76,734.15,Two year,Credit card,Yes
+C0009,63,41.21,2588.02,Two year,Electronic check,Yes
+C0010,69,52.82,3636.13,Month-to-month,Credit card,Yes
+C0011,62,117.61,7286.3,Month-to-month,Bank transfer,Yes
+C0012,9,106.64,967.61,Month-to-month,Credit card,No
+C0013,47,114.36,5369.3,Two year,Mailed check,Yes
+C0014,26,88.83,2308.44,Month-to-month,Mailed check,Yes
+C0015,50,98.46,4915.43,One year,Bank transfer,Yes
+C0016,47,90.15,4235.79,Month-to-month,Electronic check,No
+C0017,30,42.89,1296.69,Month-to-month,Bank transfer,Yes
+C0018,32,86.39,2762.54,Two year,Credit card,No
+C0019,60,95.64,5730.45,Month-to-month,Credit card,Yes
+C0020,53,117.73,6245.84,One year,Bank transfer,Yes
+C0021,13,74.29,967.21,Month-to-month,Mailed check,Yes
+C0022,7,88.89,631.2,Month-to-month,Electronic check,No
+C0023,67,85.25,5719.72,Month-to-month,Bank transfer,No
+C0024,6,29.32,171.6,Two year,Bank transfer,Yes
+C0025,2,73.11,155.72,Month-to-month,Electronic check,No
+C0026,21,45.79,968.56,One year,Electronic check,Yes
+C0027,9,42.97,385.52,One year,Electronic check,Yes
+C0028,14,79.54,1112.16,Month-to-month,Credit card,Yes
+C0029,32,79.63,2555.31,One year,Credit card,No
+C0030,56,81.3,4547.55,Month-to-month,Credit card,No
+C0031,32,52.85,1686.74,Month-to-month,Credit card,Yes
+C0032,31,107.63,3343.99,Month-to-month,Mailed check,Yes
+C0033,26,109.51,2843.94,Month-to-month,Electronic check,No
+C0034,16,112.33,1795.94,Two year,Bank transfer,No
+C0035,67,67.46,4520.5,Two year,Credit card,Yes
+C0036,12,85.02,1014.59,One year,Mailed check,No
+C0037,13,112.77,1462.02,Two year,Credit card,No
+C0038,68,101.12,6875.92,Two year,Electronic check,Yes
+C0039,21,112.95,2370.79,Month-to-month,Electronic check,Yes
+C0040,24,87.75,2114.35,Two year,Credit card,No
+C0041,7,94.21,653.83,Month-to-month,Credit card,No
+C0042,42,113.41,4756.08,Two year,Credit card,No
+C0043,3,48.62,150.46,Month-to-month,Credit card,No
+C0044,33,61.52,2027.44,One year,Credit card,Yes
+C0045,16,67.13,1067.12,Two year,Electronic check,Yes
+C0046,70,103.78,7268.11,Two year,Credit card,No
+C0047,9,97.39,875.42,Month-to-month,Electronic check,Yes
+C0048,61,74.0,4520.79,Two year,Mailed check,Yes
+C0049,25,58.79,1463.22,Month-to-month,Credit card,No
+C0050,64,110.16,7051.29,One year,Mailed check,No
+C0051,52,21.12,1093.21,Two year,Mailed check,No
+C0052,18,36.45,649.94,Month-to-month,Credit card,No
+C0053,23,86.07,1969.73,Month-to-month,Mailed check,No
+C0054,33,96.1,3174.07,One year,Bank transfer,No
+C0055,24,109.51,2625.87,Month-to-month,Electronic check,No
+C0056,18,46.02,832.38,One year,Electronic check,No
+C0057,63,44.76,2821.41,One year,Electronic check,Yes
+C0058,8,42.48,334.37,Two year,Bank transfer,Yes
+C0059,14,62.58,882.76,Two year,Bank transfer,Yes
+C0060,53,104.14,5528.52,Month-to-month,Bank transfer,No
+C0061,23,32.97,763.49,Two year,Bank transfer,Yes
+C0062,59,54.45,3206.8,Two year,Bank transfer,Yes
+C0063,50,40.74,2046.37,One year,Credit card,No
+C0064,62,28.65,1770.94,Two year,Mailed check,No
+C0065,47,33.86,1585.95,Two year,Electronic check,No
+C0066,57,113.01,6446.45,One year,Bank transfer,Yes
+C0067,62,97.79,6057.55,Month-to-month,Bank transfer,Yes
+C0068,10,97.86,987.44,Two year,Bank transfer,No
+C0069,53,68.05,3612.7,One year,Bank transfer,No
+C0070,30,21.38,636.13,Two year,Mailed check,Yes
+C0071,61,36.41,2217.39,Two year,Bank transfer,Yes
+C0072,22,96.25,2115.02,Two year,Credit card,No
+C0073,51,55.42,2827.63,Two year,Credit card,Yes
+C0074,21,91.34,1911.33,Two year,Bank transfer,Yes
+C0075,62,53.8,3340.26,One year,Electronic check,Yes
+C0076,62,71.64,4435.2,Month-to-month,Bank transfer,No
+C0077,26,21.46,549.38,Two year,Mailed check,Yes
+C0078,31,119.9,3723.72,One year,Credit card,No
+C0079,66,63.99,4216.44,Two year,Credit card,No
+C0080,29,90.91,2633.97,Two year,Bank transfer,Yes
+C0081,13,83.25,1088.63,Two year,Credit card,No
+C0082,19,99.91,1891.18,One year,Bank transfer,Yes
+C0083,70,72.52,5069.7,Month-to-month,Mailed check,Yes
+C0084,19,46.38,875.56,One year,Electronic check,Yes
+C0085,35,63.81,2236.07,One year,Mailed check,No
+C0086,71,69.94,4964.96,Two year,Bank transfer,Yes
+C0087,15,117.85,1774.55,Month-to-month,Mailed check,No
+C0088,40,87.0,3471.07,Month-to-month,Mailed check,Yes
+C0089,34,90.65,3090.39,One year,Electronic check,No
+C0090,68,65.36,4441.35,Two year,Mailed check,No
+C0091,71,100.14,7109.03,Month-to-month,Bank transfer,No
+C0092,38,118.98,4514.51,One year,Mailed check,Yes
+C0093,25,30.26,752.41,One year,Bank transfer,Yes
+C0094,22,50.97,1112.74,Month-to-month,Credit card,Yes
+C0095,21,95.8,2009.48,Two year,Credit card,No
+C0096,7,51.05,367.15,Month-to-month,Mailed check,Yes
+C0097,44,50.9,2244.31,One year,Mailed check,Yes
+C0098,17,92.55,1582.42,Two year,Mailed check,No
+C0099,42,25.41,1076.26,Two year,Bank transfer,No
+C0100,68,96.22,6541.92,Two year,Credit card,No
