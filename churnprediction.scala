@@ -1,8 +1,9 @@
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.sql.functions._
-import org.apache.spark.ml.feature.VectorAssembler
+import org.apache.spark.ml.feature.{StringIndexer, OneHotEncoder, VectorAssembler}
 import org.apache.spark.ml.classification.LogisticRegression
 import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator
+import org.apache.spark.ml.Pipeline
 
 object ChurnPrediction {
   def main(args: Array[String]): Unit = {
@@ -31,12 +32,40 @@ object ChurnPrediction {
       when($"churn" === "Yes", 1).otherwise(0).alias("churn")
     )
 
-    // Step 4: Feature engineering
+    // Step 4: Handle categorical features using Pipeline
+    val contractIndexer = new StringIndexer()
+      .setInputCol("contract_type")
+      .setOutputCol("contract_index")
+      .setHandleInvalid("keep")
+
+    val paymentIndexer = new StringIndexer()
+      .setInputCol("payment_method")
+      .setOutputCol("payment_index")
+      .setHandleInvalid("keep")
+
+    val contractEncoder = new OneHotEncoder()
+      .setInputCol("contract_index")
+      .setOutputCol("contract_vec")
+      .setHandleInvalid("keep")
+
+    val paymentEncoder = new OneHotEncoder()
+      .setInputCol("payment_index")
+      .setOutputCol("payment_vec")
+      .setHandleInvalid("keep")
+
     val assembler = new VectorAssembler()
-      .setInputCols(Array("tenure", "monthly_charges"))
+      .setInputCols(Array("tenure", "monthly_charges", "contract_vec", "payment_vec"))
       .setOutputCol("features")
 
-    val finalDF = assembler.transform(cleanedDF).select("features", "churn")
+    val pipeline = new Pipeline().setStages(Array(
+      contractIndexer,
+      paymentIndexer,
+      contractEncoder,
+      paymentEncoder,
+      assembler
+    ))
+
+    val finalDF = pipeline.fit(cleanedDF).transform(cleanedDF).select("features", "churn")
 
     // Step 5: Split data
     val Array(train, test) = finalDF.randomSplit(Array(0.8, 0.2), seed = 42)
@@ -58,11 +87,12 @@ object ChurnPrediction {
 
     val auc = evaluator.evaluate(predictions)
     println(s"Model AUC: $auc")
+
+    // Step 9: Show predictions
     predictions.select("features", "churn", "prediction", "probability").show()
-    cleanedDF.show();
+    cleanedDF.show()
 
-
-    // Step 9: Stop Spark
+    // Step 10: Stop Spark
     spark.stop()
   }
 }
